@@ -17,8 +17,8 @@ class ItemFactory extends Factory
     public function definition()
     {
         return [
-            'question' => fake()->sentence(),
-            'reponse' => fake()->sentence(),
+            'question' => 'Question => ' . fake()->sentence() . ' ?',
+            'reponse' => 'Reponse => ' . fake()->sentence(),
         ];
     }
 }

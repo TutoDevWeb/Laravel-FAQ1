@@ -9,5 +9,9 @@
     </head>
     <body>
         <h1>FAQ1</h1>
+        @foreach($items as $item)
+        <p>{{ $item->question}}</p>
+        <p>{{ $item->reponse}}</p>
+        @endforeach
     </body>
 </html>

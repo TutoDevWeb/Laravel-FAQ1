@@ -9,6 +9,6 @@ class FaqController extends Controller
 {
     public function faq()
     {
-        return view('faq', Item::all());
+        return view('faq', ['items' => Item::all()]);
     }
 }
